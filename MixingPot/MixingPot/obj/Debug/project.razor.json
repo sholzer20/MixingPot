@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "\\\\cs1\\classes\\CS-378H-N-MakeAnything\\sholzer20\\EX04\\EX04_01\\MixingPot\\MixingPot\\MixingPot.csproj",
+  "TargetFramework": "v4.6.1",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}
