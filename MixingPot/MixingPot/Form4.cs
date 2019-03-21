@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -12,9 +12,13 @@ namespace MixingPot
 {
 	public partial class Form4 : Form
 	{
-		public Form4()
+		private ArrayList student_names;	// Stores the names of each student as an index in the ArrayList
+
+		// If this window was generated from the manual entry, need to accept list of students
+		public Form4(ArrayList names)
 		{
 			InitializeComponent();
+			student_names = names;
 		}
 
 		// Start the window in fullscreen
