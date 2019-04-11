@@ -34,7 +34,7 @@ namespace MixingPot
 		// Enter a Roster Manually button. Will open an appropriate form to allow the user to enter student information
 		private void button2_Click(object sender, EventArgs e)
 		{
-			Form3 f3 = new Form3();
+			Form3 f3 = new Form3(this);
 			f3.ShowDialog();
 		}
 
