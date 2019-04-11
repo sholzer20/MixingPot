@@ -111,15 +111,15 @@
             // 
             this.richTextBox1.BackColor = System.Drawing.Color.NavajoWhite;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.Font = new System.Drawing.Font("Sitka Banner", 14.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.richTextBox1.Location = new System.Drawing.Point(12, 24);
+            this.richTextBox1.Location = new System.Drawing.Point(12, 152);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(270, 124);
+            this.richTextBox1.Size = new System.Drawing.Size(278, 173);
             this.richTextBox1.TabIndex = 11;
-            this.richTextBox1.Text = "\nEnter each students\' name separately in the column.\n Hit tab to easily move from" +
-    " one column to another";
+            this.richTextBox1.Text = "\nEnter each students\' name separately in the column.\nHit the tab button to easily" +
+    " move from one column to another";
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // button1
@@ -135,7 +135,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(74, 393);
+            this.button2.Location = new System.Drawing.Point(75, 393);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(109, 45);
             this.button2.TabIndex = 10;
