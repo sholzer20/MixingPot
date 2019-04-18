@@ -18,6 +18,7 @@ namespace MixingPot
 
 		// Stores the textboxes to be read into the student_names arraylist at end
 		private ArrayList textboxes = new ArrayList();
+
 		// Counter for the dynamic textboxes
 		private int counter = 1;
 
