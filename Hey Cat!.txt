@@ -1,1 +1,0 @@
-This is a sample file to make sure we know how to push and pull from git.

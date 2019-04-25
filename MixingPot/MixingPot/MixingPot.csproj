@@ -107,6 +107,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
@@ -123,6 +124,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flagonly.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whitworth-logo-vertical-rgb %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whitworth-logo-horizontal-reverse-rgb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZDXHLQ6DZW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NWAPXFUMDW.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3PQLBTZQPC.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MPU1111YLS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\U53WYVF6H5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NWAPXFUMDW1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Y2AHVPYB51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StockSnap_N444PJYUP9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Flagonly1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

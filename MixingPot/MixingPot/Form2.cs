@@ -1,8 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections;
 using Microsoft.VisualBasic.FileIO;
 using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Security;
 
 
 namespace MixingPot
@@ -48,20 +55,20 @@ namespace MixingPot
 			if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
 			{
 				// Stores the student names to pass to the next window
-				List<String> student_names = new List<String>();
+				ArrayList student_names = new ArrayList();
 
 				// Read from the file using VB.NET parser
 				using (TextFieldParser parser = new TextFieldParser(ofd.FileName))
 				{
 					// Set parser constraints
-					parser.SetDelimiters(new String[] { "," });
+					parser.SetDelimiters(new string[] { "," });
 					parser.HasFieldsEnclosedInQuotes = false;
 
 					// Read line by line and get each token as a string
 					while (!parser.EndOfData)
 					{
-						String[] fields = parser.ReadFields();
-						// A line has been parsed into strings (each students' name), now add each to an List
+						string[] fields = parser.ReadFields();
+						// A line has been parsed into strings (each students' name), now add each to an ArrayList
 						for(int i = 0; i < fields.Length; i++)
 						{
 							student_names.Add(fields[i]);

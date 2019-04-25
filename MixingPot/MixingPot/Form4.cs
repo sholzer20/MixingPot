@@ -1,5 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MixingPot
@@ -7,16 +13,16 @@ namespace MixingPot
 	public partial class Form4 : Form
 	{
 		// Stores the names of each student as an index in the ArrayList
-		private List<String> student_names = new List<string>();    
+		private ArrayList student_names;    
 
 		// Keeps track of all the UserControl1 objects that store location information from user
-		private List<UserControl1> Locations = new List<UserControl1>();
+		private ArrayList Locations = new ArrayList();
 
 		// Used to append a new UserControl1 object to the end of the arraylist
 		private int counter = 2;
 
 		// If this window was generated from the manual entry, need to accept list of students
-		public Form4(List<String> names)
+		public Form4(ArrayList names)
 		{
 			InitializeComponent();
 
@@ -30,19 +36,6 @@ namespace MixingPot
 		private void userControl11_Load(object sender, EventArgs e)
 		{
 
-		}
-
-		// Make sure the user can only select all male OR all female
-		protected void UserControl_ItemCheck(Object sender, ItemCheckEventArgs e)
-		{
-			System.Text.StringBuilder messageBoxCS = new System.Text.StringBuilder();
-			messageBoxCS.AppendFormat("{0} = {1}", "Index", e.Index);
-			messageBoxCS.AppendLine();
-			messageBoxCS.AppendFormat("{0} = {1}", "NewValue", e.NewValue);
-			messageBoxCS.AppendLine();
-			messageBoxCS.AppendFormat("{0} = {1}", "CurrentValue", e.CurrentValue);
-			messageBoxCS.AppendLine();
-			MessageBox.Show(messageBoxCS.ToString(), "ItemCheck Event");
 		}
 
 		// Start the window in fullscreen
@@ -80,6 +73,11 @@ namespace MixingPot
 			Locations.Add(newlocation);
 		}
 
+		private void panel1_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+
 		private void button2_Click(object sender, EventArgs e)
 		{
 			// Hide the current window and begin to close the main window, open the next window
@@ -90,5 +88,10 @@ namespace MixingPot
 			// Close the Form4 window
 			Close();
 		}
-	}
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
