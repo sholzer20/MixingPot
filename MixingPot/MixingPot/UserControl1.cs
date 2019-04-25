@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MixingPot
@@ -32,41 +25,16 @@ namespace MixingPot
 
 		}
 
-		// Returns the location number as an int from the usercontrol to form5
-		public int GetLocation()
+		// Returns the location from the usercontrol to form5
+		public String GetLocation()
 		{
 			if (comboBox1.Items.Count != 0)
 			{
-				String t = comboBox1.Text;
-				switch (t)
-				{
-					case "1":
-						return 1;
-					case "2":
-						return 2;
-					case "3":
-						return 3;
-					case "4":
-						return 4;
-					case "5":
-						return 5;
-					case "6":
-						return 6;
-					case "7":
-						return 7;
-					case "8":
-						return 8;
-					case "9":
-						return 9;
-					case "10":
-						return 10;
-					default:
-						return 0;
-				}
+				return comboBox1.Text;
 			}
 			else
 			{
-				return 0;
+				return "";
 			}
 		}
 
@@ -76,13 +44,18 @@ namespace MixingPot
 				return textBox1.Text;
 		}
 
-		// Returns the grouping options from the checked list box
-		public String GetConstraints()
+		// Returns true if the user selected all male groups for a particular entry
+		public bool GetMale()
 		{
-			if (checkedListBox1.Items.Count != 0)
-			{
-			}
-			return "";
+			// The first check box indicates all male group(s)
+			return checkedListBox1.GetItemChecked(0);
+		}
+
+		// Returns true if the user selected all female groups for a particular entry
+		public bool GetFemale()
+		{
+			// The second check box indicates all female group(s)
+			return checkedListBox1.GetItemChecked(1);
 		}
 	}
 }
