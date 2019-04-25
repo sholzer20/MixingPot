@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections;
-using System.ComponentModel;
-using System.Data;
+using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MixingPot
@@ -17,13 +12,13 @@ namespace MixingPot
 		private Form1 f1;
 
 		// Stores the textboxes to be read into the student_names arraylist at end
-		private ArrayList textboxes = new ArrayList();
+		private List<TextBox> textboxes = new List<TextBox>();
 
 		// Counter for the dynamic textboxes
 		private int counter = 1;
 
 		// Stores the text from the textboxes
-		private ArrayList student_names = new ArrayList();
+		private List<String> student_names = new List<String>();
 
 		public Form3(Form1 f1)
 		{
