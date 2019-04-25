@@ -24,8 +24,10 @@ namespace MixingPot
 			Locations = locations;
 
 			CreateGroups();
+			DisplayGroups();
 		}
-
+		
+		// Makes group objects containing data from the user's entry in Form4
 		private void CreateGroups()
 		{
 			foreach (UserControl1 l in Locations)
@@ -47,6 +49,16 @@ namespace MixingPot
 					}
 				}
 			}
+		}
+
+		// Displays the group information to the screen
+		private void DisplayGroups()
+		{
+			foreach (String name in student_names)
+			{
+				textBox1.Text += name + " " + System.Environment.NewLine;
+			}
+			textBox1.Select(0,0);
 		}
 	}
 
