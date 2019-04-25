@@ -80,11 +80,6 @@ namespace MixingPot
 			Locations.Add(newlocation);
 		}
 
-		private void panel1_Paint(object sender, PaintEventArgs e)
-		{
-
-		}
-
 		private void button2_Click(object sender, EventArgs e)
 		{
 			// Hide the current window and begin to close the main window, open the next window
